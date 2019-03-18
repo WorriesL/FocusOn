@@ -5,9 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:background="@drawable/pic2">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/title"/>
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/title"
+        android:fitsSystemWindows="true"
         android:id="@+id/infor_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
@@ -28,7 +38,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
-        android:src="@drawable/add"
+        android:src="@drawable/add_fab"
         android:cropToPadding="false"
         android:backgroundTint="@color/colorPrimary"
         />
