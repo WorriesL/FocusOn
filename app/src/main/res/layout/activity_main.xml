@@ -5,18 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:fitsSystemWindows="true"
-    android:background="@drawable/pic2">
+    >
 
-    <LinearLayout
-        android:id="@+id/title"
+    <ImageView
+        android:id="@+id/background_image_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <include layout="@layout/title"/>
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic2"/>
 
     <android.support.v7.widget.RecyclerView
-        android:layout_below="@+id/title"
         android:fitsSystemWindows="true"
         android:id="@+id/infor_recycler_view"
         android:layout_width="match_parent"
@@ -40,7 +38,9 @@
         android:layout_margin="20dp"
         android:src="@drawable/add_fab"
         android:cropToPadding="false"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="#8c26ccff"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
         />
 
 

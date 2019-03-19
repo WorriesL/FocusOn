@@ -21,4 +21,12 @@
         <item name="colorControlNormal">#fff</item>
         <item name="colorControlActivated">#8c26ccff</item>
     </style>
+
+    <style name="MyDatePicker" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#DC26CCFF</item>
+        <item name="colorPrimaryDark">#DC26CCFF</item>
+        <item name="colorAccent">#DC26CCFF</item>
+    </style>
+
 </resources>

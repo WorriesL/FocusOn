@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.focuson.db.Information;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView noFocusTextView;
     private FloatingActionButton addFloatingButton;
     private RecyclerView recyclerView;
+    private ImageView backgroundImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.infor_recycler_view);
         noFocusTextView = findViewById(R.id.no_focus_text_view);
         addFloatingButton = findViewById(R.id.add_fab);
+//      backgroundImageView = findViewById(R.id.background_image_view);
         //recyclerView设置
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
