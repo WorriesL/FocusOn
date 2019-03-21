@@ -45,7 +45,7 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
     public void onBindViewHolder(@NonNull InformationViewHolder holder, int position) {
         Information infor = inforList.get(position);
         holder.contentView.setText(infor.getContent());
-        CharSequence date = android.text.format.DateFormat.format(" yyyy.MM.dd  hh:mm", infor.getTime());
+        CharSequence date = android.text.format.DateFormat.format(" yyyy.MM.dd", infor.getTime());
         holder.timeView.setText(date);
     }
 

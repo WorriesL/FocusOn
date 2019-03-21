@@ -5,14 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContentActivity"
-    android:fitsSystemWindows="true"
     android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/title_tool_bar_content_actitvity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:titleTextColor="@color/blue_light"
+
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <include layout="@layout/title"/>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,7 +32,7 @@
             />
 
         <EditText
-            android:id="@+id/focus_content_eidt_text"
+            android:id="@+id/focus_content_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/MyEditText"

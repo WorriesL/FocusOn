@@ -5,29 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@drawable/pic2"
+    android:fitsSystemWindows="true"
     >
 
-    <ImageView
-        android:id="@+id/background_image_view"
+    <android.support.v7.widget.Toolbar
+        android:fitsSystemWindows="true"
+        android:id="@+id/title_tool_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/pic2"/>
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:titleTextColor="#fff"
+        />
+    
+    <!--<ImageView-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--android:id="@+id/background_image_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/pic2"-->
+        <!--/>-->
+
 
     <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/title_tool_bar"
         android:fitsSystemWindows="true"
         android:id="@+id/infor_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-    <TextView
+    <LinearLayout
         android:id="@+id/no_focus_text_view"
+        android:background="#8000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_centerInParent="true"
-        android:text="No Thing You Need Focus On"
-        android:gravity="center"
-        android:textSize="17sp"/>
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="There Is No Thing You Need Focus On"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#fff"/>
+    </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/add_fab"
